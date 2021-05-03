@@ -12,7 +12,7 @@ The code for the semaphore :
 
 ```cpp
 // The code for a FIFO semaphore.
-struct semaphore
+struct Semaphore
 {
     int value = 1;
     Queue* Q = new Queue();
