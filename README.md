@@ -102,7 +102,8 @@ Semaphore* writer_sem = new Semaphore();
 writer_sem->value = 0; //WHy this is initialized to zero will be explained later.
 int num_started = 0; // a count of how many readers have started reading since the last time num_started was cleared.
 int num_completed = 0;// a count of how many readers have completed reading.
-//num_started and num_completed are kept in different variable instead of merging them into one is because they would be changed by different semaphores.
+//num_started and num_completed are kept in different variable
+//instead of merging them into one is because they would be changed by different semaphores.
 bool writer_waiting = false; // this indicated whether a writing is waiting.
 ```
 
