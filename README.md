@@ -148,6 +148,7 @@ if(num_started == num_completed)
 else
 {
     writer_waiting = true;
+    out_sem->signal();
     writer_sem->wait();
     writer_waiting = false;
 }
